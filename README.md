@@ -32,6 +32,10 @@
 
 ```text
 bingacc/
+├── tdevbing.exe                 # File ứng dụng Desktop độc lập (có Icon nhân vật Chibi)
+├── build_exe.bat                # Script biên dịch tdevbing.exe 1-click
+├── assets/                      # Chứa icon.png và icon.ico của ứng dụng
+├── launcher/                    # Mã nguồn C# của file thực thi tdevbing.exe
 ├── .gitignore                   # Chặn các file bảo mật (cookie profiles, .env, database.json)
 ├── README.md                    # Hướng dẫn chi tiết
 ├── run_app.vbs                  # Khởi chạy Desktop App ẩn hoàn toàn màn hình đen CMD
@@ -69,10 +73,10 @@ bingacc/
 
 ## 🚀 Hướng dẫn khởi chạy
 
-### Cách 1: Chạy Desktop App (Khuyên dùng)
-- **Tạo Shortcut ra Desktop (Lần đầu)**: Nháy đúp file `create_desktop_shortcut.bat`. Một shortcut **tdevbing** sẽ xuất hiện trên màn hình Desktop của bạn.
-- **Khởi động**: Nháy đúp vào shortcut **tdevbing** trên Desktop hoặc nháy đúp file `run_app.vbs` (hoặc `start.bat`). Cửa sổ phần mềm sẽ mở ra độc lập.
-- **Tắt phần mềm**: Nháy đúp file `stop.bat` để tắt toàn bộ tiến trình chạy ngầm và giải phóng cổng mạng.
+### Cách 1: Chạy trực tiếp File EXE hoặc Desktop App (Khuyên dùng)
+- **Chạy trực tiếp**: Nháy đúp chuột vào file **`tdevbing.exe`** ở thư mục gốc. Ứng dụng sẽ tự động khởi chạy với icon nhân vật Chibi, không có cửa sổ đen CMD, và có biểu tượng ở khay hệ thống (System Tray).
+- **Tạo Shortcut ra Desktop (Lần đầu)**: Nháy đúp file `create_desktop_shortcut.bat`. Một shortcut **tdevbing** với icon Chibi sẽ xuất hiện trên màn hình Desktop của bạn.
+- **Tắt phần mềm**: Nhấp chuột phải vào icon ở khay hệ thống (góc dưới bên phải) chọn **Thoát ứng dụng (Exit)**, hoặc nháy đúp file `stop.bat` để tắt toàn bộ tiến trình chạy ngầm.
 
 ### Cách 2: Chạy thủ công bằng dòng lệnh
 1. **Khởi động Backend**:

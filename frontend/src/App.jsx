@@ -231,8 +231,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo & Name: tdevbing với icon quả cầu trắng đen thay thế cho Flame */}
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded bg-slate-900 dark:bg-slate-800 border border-slate-700/80 flex items-center justify-center text-slate-100 shadow-sm">
-              <Globe className="w-5 h-5 text-white" />
+            <div className="w-10 h-10 rounded-lg overflow-hidden border border-slate-300 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800 flex items-center justify-center shrink-0">
+              <img src="/icon.png" alt="tdevbing icon" className="w-full h-full object-cover" />
             </div>
             <div>
               <div className="flex items-center gap-2">
