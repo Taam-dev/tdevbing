@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+*/node_modules/
+
+# Environment secrets (GROQ API keys, etc.)
+.env
+*/.env
+*.env.local
+
+# User profiles and sessions (CRITICAL: Microsoft cookies & login sessions)
+backend/profiles/
+profiles/
+
+# Local database (personal account data)
+backend/database.json
+
+# Build outputs
+dist/
+*/dist/
+build/
+
+# Logs & temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
